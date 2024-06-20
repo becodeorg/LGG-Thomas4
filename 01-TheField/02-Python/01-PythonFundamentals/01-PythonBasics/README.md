@@ -56,12 +56,12 @@ Source: [8 World-Class Software Companies That Use Python](https://files.realpyt
 
 * **Install Python on Linux or MacOS:** If you work in a Linux or MacOS environment, good news: Python is already installed. However, make sure you have a **3.10** or higher. 
 ````shell
-python -v
+python -V
 ````
 
 *if this command return an error or a version < 3, try with:*
 ````shell
-python3 -v
+python3 -V
 ````
 
 * **Install Python on Windows:** You can download a Python installation file at this address: [Download Python](https://www.python.org/download/)
