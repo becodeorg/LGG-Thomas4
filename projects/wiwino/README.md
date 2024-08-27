@@ -75,18 +75,27 @@ If a certain question is hard or not possible to answer with the data you have b
 
 ## Constraints
 
-- You are not allowed to use pandas or similar tools for the data analysis, you should use SQL and SQL only
-    - For instance, use SQL `JOIN`s to cross-reference tables, not `pd.merge()`
-    - But you can of course use a Python ORM library if you like
-- Write your queries in dedicated `.sql` files or a `queries.py` file with the queries as strings
+- The team has to work in a Data Analyst (Clients) - Data Engineer (Providers) tandem
+- Create a Trello board with 4 sections:
+    - Backlog (where Data Analysts request CSV files)
+    - In Progress (where Data Engineers put the tickets when they are working on them)
+    - Ready for Testing (where Data Engineers put the tickets when they are done, waiting for Data Analyst feedback)
+    - Done (where Data Analysts put the tickets when the Data Engineer has done his job properly)
+- The Github repo has to follow the trello board:
+    - In Progress: the script and the generated CSV are in a new branch created by the engineer
+    - Ready for Testing: the analyst checks if the CSV answers his request.
+        - Yes: Move to done and merge the branch with the main branch
+        - No: Back to in progress
+    - Done: The branch has been merged
 - For visualizing your insights, use either Python or Excel
 
 ## Deliverables
 
 1. Publish your source code in a GitHub repository
-2. Pimp the README file
+2. Share the link to your trello board
+3. Pimp the README file
     - Include the main insights in it
-3. Show us your results in a nice presentation
+4. Show us your results in a nice presentation (add it in PDF format to the github)
     - Can be with PowerPoint, a smooth Jupyter notebook & Markdown, a printout, ...
 
 ## Steps
